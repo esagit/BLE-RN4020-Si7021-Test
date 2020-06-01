@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -172,7 +172,7 @@ DIN A4, landscape with extra doc field</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="RN4020SCH" urn="urn:adsk.eagle:symbol:6645698/2" library_version="43">
+<symbol name="RN4020SCH" urn="urn:adsk.eagle:symbol:6645698/3" library_version="44">
 <pin name="GND-1" x="-22.86" y="20.32" length="middle"/>
 <pin name="AIO2" x="-22.86" y="17.78" length="middle"/>
 <pin name="AIO1" x="-22.86" y="15.24" length="middle"/>
@@ -191,8 +191,8 @@ DIN A4, landscape with extra doc field</description>
 <pin name="RTS/PIO6" x="20.32" y="5.08" length="middle" rot="R180"/>
 <pin name="PWM4/PIO7" x="20.32" y="7.62" length="middle" rot="R180"/>
 <pin name="RSVD" x="20.32" y="10.16" length="middle" rot="R180"/>
-<pin name="SDA" x="20.32" y="12.7" length="middle" rot="R180"/>
-<pin name="SCL" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="SCL" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="SDA" x="20.32" y="15.24" length="middle" rot="R180"/>
 <pin name="VDD" x="20.32" y="17.78" length="middle" rot="R180"/>
 <pin name="GND-24" x="20.32" y="20.32" length="middle" rot="R180"/>
 <pin name="GND-9" x="-22.86" y="-22.86" length="middle"/>
@@ -217,7 +217,7 @@ DIN A4, landscape with extra doc field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RN4020" urn="urn:adsk.eagle:component:6645723/6" prefix="U" uservalue="yes" library_version="43">
+<deviceset name="RN4020" urn="urn:adsk.eagle:component:6645723/7" prefix="U" uservalue="yes" library_version="44">
 <description>Microchhip RN4020 Bluetooth® 4.1 Low Energy Module
 &lt;p&gt;
 source: &lt;a href="https://www.mouser.fi/ProductDetail/Microchip-Technology/RN4020-V-RMBEC133?qs=%2fha2pyFadui0SsXSplcdmSs5jU1zsLntGcLpD2Yv54SfP5zXGtgys8DqczVzwD56"&gt;Datasheet&lt;/a&gt;</description>
@@ -243,8 +243,8 @@ source: &lt;a href="https://www.mouser.fi/ProductDetail/Microchip-Technology/RN4
 <connect gate="G$1" pin="PWM4/PIO7" pad="19"/>
 <connect gate="G$1" pin="RSVD" pad="20"/>
 <connect gate="G$1" pin="RTS/PIO6" pad="18"/>
-<connect gate="G$1" pin="SCL" pad="22"/>
-<connect gate="G$1" pin="SDA" pad="21"/>
+<connect gate="G$1" pin="SCL" pad="21"/>
+<connect gate="G$1" pin="SDA" pad="22"/>
 <connect gate="G$1" pin="SPI/PIO" pad="17"/>
 <connect gate="G$1" pin="UART_RX" pad="6"/>
 <connect gate="G$1" pin="UART_TX" pad="5"/>
@@ -425,22 +425,8 @@ source: &lt;a href="https://www.mouser.fi/ProductDetail/Microchip-Technology/RN4
 <nets>
 <net name="SCL" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="SCL"/>
-<wire x1="111.76" y1="114.3" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
-<label x="121.92" y="114.3" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="SCL"/>
-</segment>
-<segment>
 <wire x1="238.76" y1="116.84" x2="254" y2="116.84" width="0.1524" layer="91"/>
 <label x="246.38" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SDA" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="SDA"/>
-<wire x1="111.76" y1="111.76" x2="167.64" y2="111.76" width="0.1524" layer="91"/>
-<label x="121.92" y="111.76" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -492,6 +478,26 @@ source: &lt;a href="https://www.mouser.fi/ProductDetail/Microchip-Technology/RN4
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="167.64" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="SDA"/>
+<wire x1="111.76" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="SDA"/>
+<wire x1="167.64" y1="111.76" x2="139.7" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="111.76" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="SCL"/>
+<wire x1="111.76" y1="111.76" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="111.76" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="109.22" x2="147.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="109.22" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="SCL"/>
+<wire x1="147.32" y1="114.3" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
