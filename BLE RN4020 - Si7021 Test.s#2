@@ -123,29 +123,6 @@ DIN A4, landscape with extra doc field</description>
 </library>
 <library name="esao" urn="urn:adsk.eagle:library:6645685">
 <packages>
-<package name="DFN-6-3X3-SI7020" urn="urn:adsk.eagle:footprint:6645689/2" library_version="42">
-<description>&lt;b&gt;3x3 6-pin DFN_1&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-1.45" y="1" dx="0.85" dy="0.45" layer="1"/>
-<smd name="2" x="-1.45" y="0" dx="0.85" dy="0.45" layer="1"/>
-<smd name="3" x="-1.45" y="-1" dx="0.85" dy="0.45" layer="1"/>
-<smd name="4" x="1.45" y="-1" dx="0.85" dy="0.45" layer="1"/>
-<smd name="5" x="1.45" y="0" dx="0.85" dy="0.45" layer="1"/>
-<smd name="6" x="1.45" y="1" dx="0.85" dy="0.45" layer="1"/>
-<smd name="7" x="0" y="0" dx="2.5" dy="1.6" layer="1" rot="R90"/>
-<text x="0" y="3.175" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="-3.175" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-2.125" y1="1.75" x2="2.125" y2="1.75" width="0.05" layer="51"/>
-<wire x1="2.125" y1="1.75" x2="2.125" y2="-1.75" width="0.05" layer="51"/>
-<wire x1="2.125" y1="-1.75" x2="-2.125" y2="-1.75" width="0.05" layer="51"/>
-<wire x1="-2.125" y1="-1.75" x2="-2.125" y2="1.75" width="0.05" layer="51"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.1" layer="51"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1" layer="51"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.1" layer="51"/>
-<wire x1="-1.5" y1="0.75" x2="-0.75" y2="1.5" width="0.1" layer="51"/>
-<circle x="-1.875" y="1.725" radius="0.125" width="0.25" layer="25"/>
-</package>
 <package name="RN4020" urn="urn:adsk.eagle:footprint:6645688/2" library_version="43">
 <smd name="10" x="2.75" y="0.25" dx="1.5" dy="0.8" layer="1" rot="R90"/>
 <smd name="11" x="3.95" y="0.25" dx="1.5" dy="0.8" layer="1" rot="R90"/>
@@ -188,12 +165,6 @@ DIN A4, landscape with extra doc field</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="RESCAV100P300X300X80-6" urn="urn:adsk.eagle:package:6645708/4" type="model" library_version="42">
-<description>&lt;b&gt;3x3 6-pin DFN_1&lt;/b&gt;&lt;br&gt;</description>
-<packageinstances>
-<packageinstance name="DFN-6-3X3-SI7020"/>
-</packageinstances>
-</package3d>
 <package3d name="RN4020" urn="urn:adsk.eagle:package:6645707/4" type="model" library_version="43">
 <packageinstances>
 <packageinstance name="RN4020"/>
@@ -201,21 +172,6 @@ DIN A4, landscape with extra doc field</description>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="SI7020-A20-GM" urn="urn:adsk.eagle:symbol:6645699/1" library_version="42">
-<wire x1="5.08" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-15.24" x2="25.4" y2="2.54" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
-<text x="26.67" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="26.67" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="SDA" x="0" y="0" length="middle"/>
-<pin name="GND" x="0" y="-2.54" length="middle" direction="pwr"/>
-<pin name="DNC_1" x="0" y="-5.08" length="middle"/>
-<pin name="TGND" x="15.24" y="-20.32" length="middle" direction="pwr" rot="R90"/>
-<pin name="SCL" x="30.48" y="0" length="middle" rot="R180"/>
-<pin name="VDD" x="30.48" y="-2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="DNC_2" x="30.48" y="-5.08" length="middle" rot="R180"/>
-</symbol>
 <symbol name="RN4020SCH" urn="urn:adsk.eagle:symbol:6645698/2" library_version="43">
 <pin name="GND-1" x="-22.86" y="20.32" length="middle"/>
 <pin name="AIO2" x="-22.86" y="17.78" length="middle"/>
@@ -261,38 +217,6 @@ DIN A4, landscape with extra doc field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SI7020-A20-GM" urn="urn:adsk.eagle:component:6645724/3" prefix="IC" library_version="42">
-<description>&lt;b&gt;Si7020G Dig RH Temp Sensor Silicon Labs Si7020-A20-GM Temperature &amp; Humidity Sensor, -40  +85 C, 6-Pin DFN&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/SI7020-A20-GM.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SI7020-A20-GM" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DFN-6-3X3-SI7020">
-<connects>
-<connect gate="G$1" pin="DNC_1" pad="3"/>
-<connect gate="G$1" pin="DNC_2" pad="4"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="SCL" pad="6"/>
-<connect gate="G$1" pin="SDA" pad="1"/>
-<connect gate="G$1" pin="TGND" pad="7"/>
-<connect gate="G$1" pin="VDD" pad="5"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:6645708/4"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="Si7020G Dig RH Temp Sensor Silicon Labs Si7020-A20-GM Temperature &amp; Humidity Sensor, -40  +85 C, 6-Pin DFN" constant="no"/>
-<attribute name="HEIGHT" value="0.8mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Silicon Labs" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="Si7020-A20-GM" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="634-SI7020-A20-GM" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RN4020" urn="urn:adsk.eagle:component:6645723/6" prefix="U" uservalue="yes" library_version="43">
 <description>Microchhip RN4020 Bluetooth® 4.1 Low Energy Module
 &lt;p&gt;
@@ -378,6 +302,71 @@ source: &lt;a href="https://www.mouser.fi/ProductDetail/Microchip-Technology/RN4
 </deviceset>
 </devicesets>
 </library>
+<library name="Adafruit" urn="urn:adsk.eagle:library:20456946">
+<packages>
+<package name="ADAFRUIT_ID3251_SI7021" urn="urn:adsk.eagle:footprint:20456948/1" library_version="1">
+<description>Adafruit Si7021 Temperature &amp; Humidity Sensor Breakout Board</description>
+<pad name="VIN" x="-6.35" y="5.08" drill="0.6" shape="long"/>
+<pad name="V3O" x="-6.35" y="2.54" drill="0.6" shape="long"/>
+<pad name="GND" x="-6.35" y="0" drill="0.6" shape="long"/>
+<pad name="SCL" x="-6.35" y="-2.54" drill="0.6" shape="long"/>
+<pad name="SDA" x="-6.35" y="-5.08" drill="0.6" shape="long"/>
+<wire x1="-8.89" y1="-7.62" x2="-8.89" y2="7.62" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="7.62" x2="8.89" y2="7.62" width="0.127" layer="21"/>
+<wire x1="8.89" y1="7.62" x2="8.89" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-7.62" x2="-8.89" y2="-7.62" width="0.127" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="ADAFRUIT_ID3251_SI7021" urn="urn:adsk.eagle:package:20456957/1" type="box" library_version="1">
+<description>Adafruit Si7021 Temperature &amp; Humidity Sensor Breakout Board</description>
+<packageinstances>
+<packageinstance name="ADAFRUIT_ID3251_SI7021"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="ADAFRUIT_ID3251_SI7021" urn="urn:adsk.eagle:symbol:20456952/1" library_version="1">
+<description>Adafruit Si7021 Temperature &amp; Humidity Sensor Breakout Board</description>
+<pin name="VIN" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="3VO" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="0" length="middle" direction="pwr"/>
+<pin name="SCL" x="-12.7" y="-2.54" length="middle"/>
+<pin name="SDA" x="-12.7" y="-5.08" length="middle"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="10.922" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ADAFRUIT_ID3251_SI7021" urn="urn:adsk.eagle:component:20456961/1" library_version="1">
+<description>Adafruit Si7021 Temperature &amp; Humidity Sensor Breakout Board</description>
+<gates>
+<gate name="G$1" symbol="ADAFRUIT_ID3251_SI7021" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="ADAFRUIT_ID3251_SI7021">
+<connects>
+<connect gate="G$1" pin="3VO" pad="V3O"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:20456957/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -389,12 +378,12 @@ source: &lt;a href="https://www.mouser.fi/ProductDetail/Microchip-Technology/RN4
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_L" device=""/>
-<part name="IC1" library="esao" library_urn="urn:adsk.eagle:library:6645685" deviceset="SI7020-A20-GM" device="" package3d_urn="urn:adsk.eagle:package:6645708/4"/>
 <part name="U1" library="esao" library_urn="urn:adsk.eagle:library:6645685" deviceset="RN4020" device="" package3d_urn="urn:adsk.eagle:package:6645707/4"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U$1" library="Adafruit" library_urn="urn:adsk.eagle:library:20456946" deviceset="ADAFRUIT_ID3251_SI7021" device="" package3d_urn="urn:adsk.eagle:package:20456957/1"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -408,27 +397,27 @@ source: &lt;a href="https://www.mouser.fi/ProductDetail/Microchip-Technology/RN4
 <attribute name="SHEET" x="248.92" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="180.34" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="IC1" gate="G$1" x="162.56" y="116.84" smashed="yes">
-<attribute name="NAME" x="170.18" y="121.92" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="180.34" y="99.06" size="1.778" layer="96" align="center-left"/>
-</instance>
 <instance part="U1" gate="G$1" x="91.44" y="99.06" smashed="yes">
 <attribute name="NAME" x="76.2" y="134.62" size="2.54" layer="95"/>
 </instance>
-<instance part="GND1" gate="1" x="114.3" y="71.12" smashed="yes">
-<attribute name="VALUE" x="111.76" y="68.58" size="1.778" layer="96"/>
+<instance part="GND1" gate="1" x="116.84" y="76.2" smashed="yes" rot="R90">
+<attribute name="VALUE" x="119.38" y="73.66" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND2" gate="1" x="66.04" y="71.12" smashed="yes">
-<attribute name="VALUE" x="63.5" y="68.58" size="1.778" layer="96"/>
+<instance part="GND2" gate="1" x="63.5" y="76.2" smashed="yes" rot="R270">
+<attribute name="VALUE" x="60.96" y="78.74" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND3" gate="1" x="114.3" y="124.46" smashed="yes" rot="R180">
-<attribute name="VALUE" x="116.84" y="127" size="1.778" layer="96" rot="R180"/>
+<instance part="GND3" gate="1" x="116.84" y="119.38" smashed="yes" rot="R90">
+<attribute name="VALUE" x="119.38" y="116.84" size="1.6764" layer="96" rot="R90"/>
 </instance>
-<instance part="GND4" gate="1" x="66.04" y="124.46" smashed="yes" rot="R180">
-<attribute name="VALUE" x="68.58" y="127" size="1.778" layer="96" rot="R180"/>
+<instance part="GND4" gate="1" x="63.5" y="119.38" smashed="yes" rot="R270">
+<attribute name="VALUE" x="60.96" y="121.92" size="1.6764" layer="96" rot="R270"/>
 </instance>
-<instance part="GND5" gate="1" x="177.8" y="91.44" smashed="yes">
-<attribute name="VALUE" x="175.26" y="88.9" size="1.778" layer="96"/>
+<instance part="U$1" gate="G$1" x="180.34" y="116.84" smashed="yes">
+<attribute name="NAME" x="172.72" y="127.762" size="1.778" layer="95"/>
+<attribute name="VALUE" x="172.72" y="104.14" size="1.778" layer="96"/>
+</instance>
+<instance part="GND5" gate="1" x="157.48" y="116.84" smashed="yes" rot="R270">
+<attribute name="VALUE" x="154.94" y="119.38" size="1.6764" layer="96" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -437,37 +426,41 @@ source: &lt;a href="https://www.mouser.fi/ProductDetail/Microchip-Technology/RN4
 <net name="SCL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SCL"/>
-<wire x1="111.76" y1="114.3" x2="129.54" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="114.3" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
 <label x="121.92" y="114.3" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="SCL"/>
-<wire x1="193.04" y1="116.84" x2="208.28" y2="116.84" width="0.1524" layer="91"/>
-<label x="200.66" y="116.84" size="1.778" layer="95"/>
+<wire x1="238.76" y1="116.84" x2="254" y2="116.84" width="0.1524" layer="91"/>
+<label x="246.38" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SDA"/>
-<wire x1="111.76" y1="111.76" x2="129.54" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="111.76" x2="167.64" y2="111.76" width="0.1524" layer="91"/>
 <label x="121.92" y="111.76" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="SDA"/>
-<wire x1="162.56" y1="116.84" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
-<label x="149.86" y="116.84" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="3V3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VDD"/>
-<wire x1="111.76" y1="116.84" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="116.84" x2="132.08" y2="116.84" width="0.1524" layer="91"/>
 <label x="121.92" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VDD"/>
-<wire x1="193.04" y1="114.3" x2="208.28" y2="114.3" width="0.1524" layer="91"/>
-<label x="200.66" y="114.3" size="1.778" layer="95"/>
+<wire x1="238.76" y1="114.3" x2="254" y2="114.3" width="0.1524" layer="91"/>
+<label x="246.38" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="71.12" y1="167.64" x2="106.68" y2="167.64" width="0.1524" layer="91"/>
+<label x="99.06" y="167.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VIN"/>
+<wire x1="167.64" y1="121.92" x2="152.4" y2="121.92" width="0.1524" layer="91"/>
+<label x="154.94" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -475,30 +468,30 @@ source: &lt;a href="https://www.mouser.fi/ProductDetail/Microchip-Technology/RN4
 <pinref part="U1" gate="G$1" pin="GND-24"/>
 <wire x1="111.76" y1="119.38" x2="114.3" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="114.3" y1="119.38" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND-1"/>
 <wire x1="68.58" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="66.04" y1="119.38" x2="66.04" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="U1" gate="G$1" pin="GND-9"/>
-<wire x1="66.04" y1="73.66" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="76.2" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND-16"/>
 <wire x1="111.76" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="114.3" y1="76.2" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<wire x1="71.12" y1="157.48" x2="106.68" y2="157.48" width="0.1524" layer="91"/>
+<label x="99.06" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="IC1" gate="G$1" pin="TGND"/>
-<wire x1="177.8" y1="93.98" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
